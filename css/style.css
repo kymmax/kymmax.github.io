@@ -1573,6 +1573,9 @@ p{
 }
 
 /*owl-carousel*/
+.owl-stage{
+	-webkit-overflow-scrolling: touch;
+}
 .owl-theme .owl-dots{
 	/*border: 1px solid #000;*/
 	display: flex;
