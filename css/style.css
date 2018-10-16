@@ -3488,3 +3488,10 @@ p{
 		opacity: 1;
 	}
 }
+
+/* Utility */
+
+.scroll{
+	overflow:scroll; 
+	-webkit-overflow-scrolling: touch;
+}
