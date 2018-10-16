@@ -2937,12 +2937,14 @@
 		        console.log(distance);
 
 		        if (distance >= 10){
-		        	// event.preventDefault();
-		        	window.scrollBy(0,0);
+		        	$('body').bind('touchmove', function(e){e.preventDefault(),console.log("work")})
+		        	// window.scrollBy(0,0);
 
 		        }
 		        if (distance >= -10){
-				window.scrollBy(0,0);
+		        	$('body').bind('touchmove', function(e){e.preventDefault(),console.log("work")})
+
+
 		        }
 		    });
 		    $(this).on('touchend', function() {
