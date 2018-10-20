@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<!-- RWD setting -->
+    <!-- maximum-scale= 手指放大倍率 --><!-- user-scalable=0 關閉放大功能 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2, user-scalable=0, user-scalable=no">
+	<title>KYM WEB</title>
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway" rel="stylesheet">
+	<!-- Normalize -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<!-- Style -->
+	<link rel="stylesheet" href="css/style.css">
+	
+	<!-- 瀏覽器縮圖 -->
+	<link rel="apple-touch-icon" sizes="57x57" href="images/Others/apple-icon-57x57.png">
+	<link rel="apple-touch-icon" sizes="60x60" href="images/Others/apple-icon-60x60.png">
+	<link rel="apple-touch-icon" sizes="72x72" href="images/Others/apple-icon-72x72.png">
+	<link rel="apple-touch-icon" sizes="76x76" href="images/Others/apple-icon-76x76.png">
+	<link rel="apple-touch-icon" sizes="114x114" href="images/Others/apple-icon-114x114.png">
+	<link rel="apple-touch-icon" sizes="120x120" href="images/Others/apple-icon-120x120.png">
+	<link rel="apple-touch-icon" sizes="144x144" href="images/Others/apple-icon-144x144.png">
+	<link rel="apple-touch-icon" sizes="152x152" href="images/Others/apple-icon-152x152.png">
+	<link rel="apple-touch-icon" sizes="180x180" href="images/Others/apple-icon-180x180.png">
+	<link rel="icon" type="image/png" sizes="192x192"  href="images/Others/android-icon-192x192.png">
+	<link rel="icon" type="image/png" sizes="32x32" href="images/Others/favicon-32x32.png">
+	<link rel="icon" type="image/png" sizes="96x96" href="images/Others/favicon-96x96.png">
+	<link rel="icon" type="image/png" sizes="16x16" href="images/Others/favicon-16x16.png">
+	<link rel="manifest" href="images/Others/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="images/Others/ms-icon-144x144.png">
+	<meta name="theme-color" content="#ffffff">
+
+	<!-- <script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+    <script>
+    $( document ).ready(function() {
+        console.log( "document loaded" );
+    });
+ 
+    $( window ).on( "load", function() {
+        console.log( "window loaded" );
+    });
+
+    $(function() {
+		// Will wait for everything on the page to load.
+		$(window).bind('load', function() {
+			console.log( "window loaded-2" );
+		});
+	
+	});
+    </script> -->
+
+
+
+</head>
+<body class="cursor-type">
+	<!-- loading page -->
+	<div class="loading-page">
+		<div class="centre">
+			<div class="loader"></div>
+			<div class="loading-text">The page is loading...</div>
+		</div>
+	</div>
+
+
+	<div class="wrapper-cover">
+		<a href="Design.html" class="cover-top">
+			<div class="cover-video">
+				<video class="cover-video-setting" playsinline autoplay muted loop="true">
+					<source type="video/mp4" src="video/Smoke_Sheet_270P_Motion_Background_Loop.mp4"></source>
+				</video>
+			</div>
+			<div class="cover-top-image bgst-cover"></div>
+			<div class="cover-title title-top">MY DESIGN LIFE</div>
+			<div class="cover-mask-dark"></div>
+		</a>
+	
+
+		<div class="cover-mid">
+			<div class="cover-brand bgst-contain"></div>
+
+			<div class="cover-md-title">KYM WEB</div>
+
+			<div class="cover-community">
+				<a href="https://www.facebook.com/kymmax" class="cover-community-link FB bgst-contain" target="_blank"></a>
+				<a href="https://www.behance.net/kymmax0420fbe7" class="cover-community-link Be bgst-contain" target="_blank"></a>
+				<a href="https://www.pinterest.com/kymmax/" class="cover-community-link Pin bgst-contain" target="_blank"></a>
+			</div>
+		</div>
+
+
+		<a href="Travel.html" class="cover-bot">
+			<div class="cover-video">
+				<video class="cover-video-setting" playsinline autoplay muted loop="true">
+					<source type="video/mp4" src="video/Silky_Blue_270P_Motion_Background_Loop.mp4"></source>
+				</video>
+			</div>
+			<div class="cover-bot-image bgst-cover"></div>
+			<div class="cover-title title-bot">MY TRAVEL LIFE</div>
+			<div class="cover-mask-dark"></div>
+		</a>
+	</div>
+</body>
+
+<!-- javascript -->
+<script src="https://code.jquery.com/jquery-1.9.1.min.js"></script>
+	<!-- <script src="assets/vendor/scrollreveal/scrollreveal.min.js"></script> -->
+
+
+	<script>
+		
+	// Scrollreveal (進場效果) //for jumbotron
+	// ScrollReveal().reveal('.js-fadeInDown',{
+	// 	distance: '100px',
+	// 	origin: 'top',
+	// 	duration: 2000,
+	// 	delay: 500,
+	// 	reset: false
+	// });
+	// ScrollReveal().reveal('.js-fadeInUp',{
+	// 	distance: '100px',
+	// 	origin: 'bottom',
+	// 	duration: 2000,
+	// 	delay: 500,
+	// 	reset: false
+	// });
+
+
+	// Loading page
+	$(function() {
+		// Will wait for everything on the page to load.
+		$(window).bind('load', function() {
+			// console.log( "window loaded-3" );
+
+			$('.loading-page').addClass('loaded');
+
+			setTimeout(function() {
+				// $('.loading-page').addClass('loaded');
+				$('.loading-page').css({'display':'none'});
+			}, 2000);
+			// Cover animation-in
+			$('.cover-mid').addClass('ani-cv-mid');
+			$('.cover-md-title').addClass('ani-cv-mid-title');
+			$('.cover-community').addClass('ani-cv-mid-community');
+			$('.cover-brand').addClass('ani-cv-brand');
+			$('.cover-top').addClass('ani-cv-top');
+			$('.cover-bot').addClass('ani-cv-bot');
+		});
+		// Will load page after 1min for users cannnot load properly
+			setTimeout(function() {
+				$('.loading-page').addClass('loaded');
+			}, 60000);
+		// Random text to keep it fresh dawg.
+		var names = ['Please wait...', 'The page is loading...', 'connecting...'];
+			setInterval(function() {
+			  var rand = Math.floor(Math.random() * 3);
+				$('.loading-text').html(names[rand]);
+			}, 2500);
+		});
+
+		// Safari + firefox 防止縮放
+	    window.onload=function () {
+	        document.addEventListener('touchstart',function (event) {
+	          if(event.touches.length>1){
+	            event.preventDefault();
+	          }
+	        });
+	        var lastTouchEnd=0;
+	        document.addEventListener('touchend',function (event) {
+	          var now=(new Date()).getTime();
+	          if(now-lastTouchEnd<=300){
+	            event.preventDefault();
+	          }
+	          lastTouchEnd=now;
+	        },false);
+	        document.addEventListener('gesturestart', function (event) {
+	          event.preventDefault();
+	        });
+	      }
+
+	</script>
+</html>
